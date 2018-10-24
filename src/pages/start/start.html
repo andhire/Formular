@@ -1,0 +1,18 @@
+
+<ion-content padding>
+
+    <ion-slides pager (ionSlideDidChange)="slideChanged()">
+      <ion-slide>Bienvenidos a Formular</ion-slide>
+      <ion-slide>Con Formular tendras todo lo que necesites a la mano, con un solo click</ion-slide>
+      <ion-slide >Iniciemos</ion-slide>
+      
+    </ion-slides>
+    
+    
+  </ion-content>
+
+  <ion-footer>
+    <button ion-button full  *ngIf="showButton" (click)="goToMenu()">
+      Iniciar
+    </button>
+  </ion-footer>
